@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
+body,
+html {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background: #fafafa;
+  color: black;
+}
+
+#site {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2em 0;
+}
+
+nav .nav__site {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+nav .nav__username {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: black;
+}
+
+nav .nav__item,
+nav .nav__link {
+  position: relative;
+  padding: 0.75em 1.25em;
+  margin: 0 1em;
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+nav .nav__item {
+  padding: 0.25em 0.5em;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+nav .nav__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #4f4f4f;
+  margin: 0 auto;
+  width: 0;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+nav .nav__item:hover, nav .nav__item:focus {
+  color: black;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+nav .nav__item:hover::before, nav .nav__item:focus::before {
+  width: 100%;
+}
+
+nav .nav__link {
+  border: 2px solid #4f4f4f;
+  border-radius: 4px;
+  -webkit-transition: 0.2s all ease-in-out !important;
+  transition: 0.2s all ease-in-out !important;
+}
+
+nav .nav__link:hover, nav .nav__link:focus {
+  color: black;
+  border-color: black;
+}
+
+header {
+  display: block;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+.inner {
+  width: 100%;
+  min-height: 100%;
+}
+
+article {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  width: 80%;
+  min-height: 100%;
+}
+
+article p {
+  white-space: pre;
+  line-height: 1em;
+}
+
+footer {
+  width: 100%;
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #4f4f4f;
+  padding: 1.5em 0;
+  background-color: #eaeaea;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer .column {
+  width: 40%;
+  text-align: center;
+}
+
+footer h2 {
+  color: black;
+}
+
+footer i,
+footer svg {
+  color: inherit;
+  margin-right: 0.5em;
+}
+
+#login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login form input {
+  margin: 0.5em 0;
+}
+
+.alert {
+  width: 50%;
+  padding: 1em 2em;
+  margin: 1em auto;
+  color: #efefef;
+  background-color: #57984d;
+  text-align: center;
+}
+
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3em 0;
+}
+
+.error h1,
+.error h2,
+.error p {
+  margin: 0.5em 0;
+}
+
+.commments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.commment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5em 0;
+}
+
+.commment .status {
+  margin-bottom: 0.5em;
+}
+
+.commment .status .username,
+.commment .status .date {
+  display: block;
+}
+
+.commment .status .btn {
+  float: left;
+}
+
+.commment .status .username {
+  padding: 8px 0;
+  float: left;
+  font-weight: 700;
+}
+
+.commment .status .date {
+  padding: 8px;
+  background: #dadada;
+  border-radius: 4px;
+  color: #4f4f4f;
+  float: right;
+  text-align: right;
+}
+
+.commment .status i,
+.commment .status svg {
+  margin: 0 4px;
+}
+
+input,
+textarea {
+  background: none;
+  outline: none;
+  border: none;
+  background-color: #efefef;
+  border: 2px solid #dadada;
+  padding: 16px 16px;
+  margin: 8px 0;
+  color: #4f4f4f;
+  width: 100%;
+}
+
+input[type="submit"],
+textarea[type="submit"] {
+  margin: 16px 0 !important;
+  width: auto;
+}
+
+input:focus, input:hover,
+textarea:focus,
+textarea:hover {
+  border: 2px solid #bababa;
+}
+
+.btn,
+input[type="submit"] {
+  margin: 0 16px;
+  text-decoration: none;
+  background: none;
+  border: 2px solid #4f4f4f;
+  border-radius: 4px;
+  padding: 0.35em 0.7em;
+  font-size: 1em !important;
+  color: #4f4f4f;
+  font-weight: 600;
+  -webkit-transition: 0.2s all ease-in-out !important;
+  transition: 0.2s all ease-in-out !important;
+}
+
+.btn:hover, .btn:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  color: black;
+  border-color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+ul li {
+  width: 100%;
+}
+
+ul li a {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 2px solid #4f4f4f;
+  color: #4f4f4f;
+  text-decoration: inherit;
+  margin: 8px 0;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+ul li a i,
+ul li a svg {
+  margin-right: 8px;
+}
+
+ul li a:hover {
+  border-color: black;
+  color: black;
+}
+
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .project {
+  -webkit-filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.15));
+  margin: 16px 0;
+  width: 65%;
+  position: relative;
+}
+
+.projects .project .inner {
+  width: 100%;
+  height: 100%;
+  padding: 32px 48px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects .project .project-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(4px) brightness(0.5) grayscale(1);
+          filter: blur(4px) brightness(0.5) grayscale(1);
+  z-index: -1;
+}
+
+.projects .project .project-bg img {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.projects .project:nth-of-type(even) {
+  margin: 16px 35%;
+}
+
+.projects .project .project-name,
+.projects .project .project-technologies,
+.projects .project .project-description {
+  z-index: 3;
+}
+
+.projects .project .project-name {
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+}
+
+.projects .project .project-technologies {
+  margin: 16px 0;
+}
+
+.projects .project .project-technologies .project-technology {
+  padding: 8px 16px;
+  background-color: #dadada;
+  color: #4f4f4f;
+}
+
+.projects .project .project-description {
+  font-size: 1;
+  color: #dadada;
+}
+/*# sourceMappingURL=style.css.map */
